@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RAINBOW" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p20-ez-QU6">
+                                <rect key="frame" x="176" y="358" width="62" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11s-D1-SoH">
+                                        <rect key="frame" x="16" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="RED"/>
+                                        <connections>
+                                            <action selector="REDBUTTONPRESS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oqN-wO-CS9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ged-Hz-N1t">
+                                        <rect key="frame" x="12" y="30" width="38" height="30"/>
+                                        <state key="normal" title="BLUE"/>
+                                        <connections>
+                                            <action selector="BLUEBUTTONPRESS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R1P-S9-9wc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xrz-OM-Df1">
+                                        <rect key="frame" x="7.5" y="60" width="47" height="30"/>
+                                        <state key="normal" title="WHITE"/>
+                                        <connections>
+                                            <action selector="WHITEBUTTONPRESS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pnx-lh-IMW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yrn-IA-aqY">
+                                        <rect key="frame" x="1" y="90" width="60" height="30"/>
+                                        <state key="normal" title="YELLOW"/>
+                                        <connections>
+                                            <action selector="YELLOWBUTTONPRESS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l7g-TS-vmj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuZ-XS-hEH">
+                                        <rect key="frame" x="0.0" y="120" width="62" height="30"/>
+                                        <state key="normal" title="ORANGE"/>
+                                        <connections>
+                                            <action selector="ORANGEEBUTTONPRESS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Opt-M1-CBU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0D-1h-0nY">
+                                        <rect key="frame" x="6.5" y="150" width="49" height="30"/>
+                                        <state key="normal" title="GREEN"/>
+                                        <connections>
+                                            <action selector="GREENBUTTONPRESS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="keJ-7e-Pqe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glD-0o-Z2P">
+                                <rect key="frame" x="182" y="546" width="51" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ABOUT"/>
+                                <connections>
+                                    <action selector="ABOUTBUTTONPRESS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u7x-jT-zDE"/>
+                                    <action selector="GREENBUTTONPRESS:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8GH-BF-Lsk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="p20-ez-QU6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FmU-AI-ypo"/>
+                            <constraint firstItem="p20-ez-QU6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UAZ-PX-qwf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
